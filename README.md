@@ -1,2 +1,5 @@
 # Ligera CSS Framework
-# Light-weight, minimal framework focusing on responsive websites & PWA's
+Light-weight, minimal css framework focusing on pwa's
+
+# Versions
+0.0.0 - Project starting point
