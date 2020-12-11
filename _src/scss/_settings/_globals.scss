@@ -8,3 +8,41 @@ $breakpoint-desktop-qhd-min: 2560px;
 $breakpoint-desktop-4k-min: 3840px;
 
 // Columns
+
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  & > * {
+    flex-basis: 100%;
+    flex: 1 1 auto;
+  }
+}
+.c2 {
+  & > * {
+    flex-basis: 50%;
+  }
+}
+.c3 {
+  & > * {
+    flex-basis: 100% / 3;
+  }
+}
+.c4 {
+  & > * {
+    flex-basis: 25%;
+  }
+}
+.c5 {
+  & > * {
+    flex-basis: 20%;
+  }
+}
+.c6 {
+  & > * {
+    flex-basis: 100% / 6;
+  }
+}
