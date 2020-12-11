@@ -15,7 +15,7 @@ var dst = '_dst';
 // TASK: SCSS
 gulp.task( 'scss', function () {
     return gulp.src( src + '/scss/_includes.scss')
-        .pipe(concat('styles.scss'))
+        .pipe(concat('ligera.scss'))
         .pipe( sass() )
         .pipe( sourcemaps.init() )
         .pipe( autoprefixer( 'last 2 version' ) )
@@ -27,12 +27,12 @@ gulp.task( 'scss', function () {
 
 // TASK: JS
 gulp.task( 'js', function () {
-    return gulp.src( src + '/js/_main.js' )
+    return gulp.src( src + '/js/_ligera.js' )
         .pipe( include() )
         .on( 'error', console.log )
         .pipe( sourcemaps.init() )
         //.pipe( uglify() )
-        .pipe( concat( 'main.min.js' ) )
+        .pipe( concat( 'ligera.min.js' ) )
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest( dst + '/js' ) );
 } );
