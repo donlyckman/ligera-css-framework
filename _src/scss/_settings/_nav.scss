@@ -1,0 +1,36 @@
+nav {
+  &.main {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 15px;
+    max-width: 100%;
+
+    a {
+      color: white;
+      padding: 0 5px;
+    }
+
+    .logo {
+      display: block;
+      align-items: center;
+
+      img {
+        height: 27px;
+        transition: transform .3s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    ul.menu {
+      display: flex;
+    }
+  }
+}

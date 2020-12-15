@@ -1,5 +1,12 @@
+// Spacing
+:root {
+  --content-max-width: 1400px;
+}
+
+
 // Breakpoints
-$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-mini-min: 768px;
+$breakpoint-tablet-min: 1024px;
 $breakpoint-desktop-sm-min: 1025px;
 $breakpoint-desktop-md-min: 1200px;
 $breakpoint-desktop-lg-min: 1440px;
@@ -7,8 +14,14 @@ $breakpoint-desktop-hd-min: 1920px;
 $breakpoint-desktop-qhd-min: 2560px;
 $breakpoint-desktop-4k-min: 3840px;
 
-// Columns
+body {
+  &>*{
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+}
 
+// Columns
 .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
   display: flex;
   flex-flow: column;
@@ -28,7 +41,7 @@ $breakpoint-desktop-4k-min: 3840px;
 }
 .c3 {
   & > * {
-    flex-basis: 100% / 3;
+    flex-basis: calc(100% / 3);
   }
 }
 .c4 {
@@ -43,12 +56,39 @@ $breakpoint-desktop-4k-min: 3840px;
 }
 .c6 {
   & > * {
-    flex-basis: 100% / 6;
+    flex-basis: calc(100% / 6);
   }
 }
 
+.flex-100 {
+  flex-basis: 100%;
+}
+.flex-50 {
+  flex-basis: 50%;
+}
+.flex-h-center {
+  justify-content: center;
+}
+.flex-v-center {
+  align-items: center;
+}
+.center {
+  text-align: center;
+}
+
+.content-width {
+  padding-left: calc((100% - var(--content-max-width)) / 2);
+  padding-right: calc((100% - var(--content-max-width)) / 2);
+}
+
 @media only screen and (min-width: $breakpoint-tablet-min) {
+  body {
+    &>*{
+      max-width: 1400px;
+    }
+
+  }
   .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
-    flex-flow: row nowrap;
+    flex-flow: row;
   }
 }

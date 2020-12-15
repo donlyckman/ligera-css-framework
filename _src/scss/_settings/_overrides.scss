@@ -1,0 +1,23 @@
+@media screen and (max-width: $breakpoint-tablet-min) {
+  .hide-mobile {
+    display: none!important;
+  }
+  .hide-desktop {
+    display: inherit;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-desktop-sm-min) {
+  .hide-mobile {
+    display: inherit;
+  }
+
+  .hide-desktop {
+    display: none!important;
+  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
