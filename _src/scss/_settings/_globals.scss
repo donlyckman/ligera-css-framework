@@ -3,16 +3,18 @@
   --content-max-width: 1400px;
 }
 
-
 // Breakpoints
-$breakpoint-tablet-mini-min: 768px;
-$breakpoint-tablet-min: 1024px;
-$breakpoint-desktop-sm-min: 1025px;
-$breakpoint-desktop-md-min: 1200px;
-$breakpoint-desktop-lg-min: 1440px;
-$breakpoint-desktop-hd-min: 1920px;
-$breakpoint-desktop-qhd-min: 2560px;
-$breakpoint-desktop-4k-min: 3840px;
+$breakpoints: (
+    "phone":        320px,
+    "tablet-mini":  768px,
+    "tablet":       1024px,
+    "desktop-sm":   1025px,
+    "desktop-md":   1200px,
+    "desktop-lg":   1440px,
+    "desktop-hd":   1920px,
+    "desktop-qhd":  2560px,
+    "desktop-4k":   3840px
+);
 
 body {
   &>*{
@@ -21,148 +23,12 @@ body {
   }
 }
 
-// Grids
-.g-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
-}
-.g-1 > * {
-  background-color:  var(--color-primary-light-x);
-  padding: 1.5rem;
-  border-radius: .5rem;
-}
-.g-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  //grid-template-rows: auto auto auto;
-  grid-gap: 1rem;
-}
-.g-2 > * {
-  background-color:  var(--color-primary-light-x);
-  padding: 1.5rem;
-  border-radius: .5rem;
-}
-
-.colors-primary, .colors-secondary {
-  display: grid;
-  //grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 1rem;
-  padding-bottom: 1rem;
-
-  & > div{
-    background-color: #eee;
-    padding: 1.5rem;
-    border-radius: .5rem;
-
-    &:nth-child(1) {
-      grid-column: span 3;
-      background-color: var(--color-primary);
-      color: white;
-    }
-    &:nth-child(2) {
-      color: white;
-      background-color: var(--color-primary-dark);
-    }
-    &:nth-child(3) {
-      color: white;
-      background-color: var(--color-primary-dark-m);
-    }
-    &:nth-child(4) {
-      color: white;
-      background-color: var(--color-primary-dark-x);
-    }
-    &:nth-child(5) {
-      background-color: var(--color-primary-light);
-    }
-    &:nth-child(6) {
-      background-color: var(--color-primary-light-m);
-    }
-    &:nth-child(7) {
-      background-color: var(--color-primary-light-x);
-    }
-
-  }
-}
-.colors-secondary{
-  & > div{
-
-    &:nth-child(1) {
-      grid-column: span 3;
-      background-color: var(--color-secondary);
-      color: white;
-    }
-    &:nth-child(2) {
-      color: white;
-      background-color: var(--color-secondary-dark);
-    }
-    &:nth-child(3) {
-      color: white;
-      background-color: var(--color-secondary-dark-m);
-    }
-    &:nth-child(4) {
-      color: white;
-      background-color: var(--color-secondary-dark-x);
-    }
-    &:nth-child(5) {
-      background-color: var(--color-secondary-light);
-    }
-    &:nth-child(6) {
-      background-color: var(--color-secondary-light-m);
-    }
-    &:nth-child(7) {
-      background-color: var(--color-secondary-light-x);
-    }
-
-  }
-
-}
-
-// Columns
-.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  max-width: 100%;
-  box-sizing: border-box;
-  & > * {
-    flex-basis: 100%;
-    flex: 1 1 auto;
-  }
-}
-.c2 {
-  & > * {
-    flex-basis: 50%;
-  }
-}
-.c3 {
-  & > * {
-    flex-basis: calc(100% / 3);
-  }
-}
-.c4 {
-  & > * {
-    flex-basis: 25%;
-  }
-}
-.c5 {
-  & > * {
-    flex-basis: 20%;
-  }
-}
-.c6 {
-  & > * {
-    flex-basis: calc(100% / 6);
-  }
-}
 
 .flex-100 {
-  flex-basis: 100%;
+  flex-basis: 100% !important;
 }
 .flex-50 {
-  flex-basis: 50%;
+  flex-basis: 50% !important;
 }
 .flex-h-center {
   justify-content: center;
@@ -175,20 +41,8 @@ body {
 }
 
 .content-width {
-  padding-left: calc((100% - var(--content-max-width)) / 2);
-  padding-right: calc((100% - var(--content-max-width)) / 2);
-}
-
-@media only screen and (min-width: $breakpoint-tablet-min) {
-  body {
-    &>*{
-      max-width: 1400px;
-    }
-
-  }
-  .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
-    flex-flow: row;
-  }
+  padding-left: calc((100% - var(--content-max-width)) / 2) !important;
+  padding-right: calc((100% - var(--content-max-width)) / 2) !important;
 }
 
 .flex-wrap {

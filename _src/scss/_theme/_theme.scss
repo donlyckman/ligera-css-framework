@@ -1,0 +1,146 @@
+.custom-theme {
+
+  .flex-test {
+    text-align: center;
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-primary-light-x);
+      min-height: 100px;
+      &:nth-child(odd){
+        background-color: var(--color-primary-light-xx);
+      }
+    }
+  }
+
+}
+
+// Grids
+.g-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.g-1>* {
+  background-color: var(--color-primary-light-x);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.g-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  //grid-template-rows: auto auto auto;
+  grid-gap: 1rem;
+}
+
+.g-2>* {
+  background-color: var(--color-primary-light-x);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.colors-primary,
+.colors-secondary {
+  display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  padding-bottom: 1rem;
+
+  &>div {
+    background-color: #eee;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+    &:nth-child(1) {
+      grid-column: span 4;
+      background-color: var(--color-primary);
+      color: white;
+    }
+
+    &:nth-child(2) {
+      color: white;
+      background-color: var(--color-primary-dark);
+    }
+
+    &:nth-child(3) {
+      color: white;
+      background-color: var(--color-primary-dark-m);
+    }
+
+    &:nth-child(4) {
+      color: white;
+      background-color: var(--color-primary-dark-x);
+    }
+    &:nth-child(5) {
+      color: white;
+      background-color: var(--color-primary-dark-xx);
+    }
+
+    &:nth-child(6) {
+      background-color: var(--color-primary-light);
+    }
+
+    &:nth-child(7) {
+      background-color: var(--color-primary-light-m);
+    }
+
+    &:nth-child(8) {
+      background-color: var(--color-primary-light-x);
+    }
+    &:nth-child(9) {
+      background-color: var(--color-primary-light-xx);
+    }
+
+  }
+}
+
+.colors-secondary {
+  &>div {
+
+    &:nth-child(1) {
+      grid-column: span 4;
+      background-color: var(--color-secondary);
+      color: white;
+    }
+
+    &:nth-child(2) {
+      color: white;
+      background-color: var(--color-secondary-dark);
+    }
+
+    &:nth-child(3) {
+      color: white;
+      background-color: var(--color-secondary-dark-m);
+    }
+
+    &:nth-child(4) {
+      color: white;
+      background-color: var(--color-secondary-dark-x);
+    }
+    &:nth-child(5) {
+      color: white;
+      background-color: var(--color-secondary-dark-xx);
+    }
+
+    &:nth-child(6) {
+      background-color: var(--color-secondary-light);
+    }
+
+    &:nth-child(7) {
+      background-color: var(--color-secondary-light-m);
+    }
+
+    &:nth-child(8) {
+      background-color: var(--color-secondary-light-x);
+    }
+    &:nth-child(9) {
+      background-color: var(--color-secondary-light-xx);
+    }
+
+  }
+
+}
