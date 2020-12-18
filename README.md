@@ -14,4 +14,5 @@ Project Goals
 
 # Notes
 12-10-2020 Main branch created
+
 12-18-2020 Numerous updates to improve overall project stucture as well as adding content pages to use for testing the framework
