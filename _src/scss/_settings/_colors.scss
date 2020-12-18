@@ -1,7 +1,4 @@
 // Color values
-// $color-primary: #2f759d;
-// $color-secondary: #f37a1e;
-
 
 :root {
   /* Primary colors */
@@ -9,24 +6,30 @@
   --color-primary-hs: 202, 54%; /* base color */
   --color-primary-l: 40%; /* base lightness*/
 
-  --color-primary-dark: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 15%));
-  --color-primary-dark-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 20%));
-  --color-primary-dark-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 25%));
+  --color-prime:#2f759d;
+
+  --color-primary-dark: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 14%));
+  --color-primary-dark-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 18%));
+  --color-primary-dark-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 21%));
+  --color-primary-dark-xx: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 24%));
   --color-primary-light: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 15%));
   --color-primary-light-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 30%));
-  --color-primary-light-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 56%));
+  --color-primary-light-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 53%));
+  --color-primary-light-xx: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 56%));
 
     /* Secondary colors */
   --color-secondary: hsl(26, 90%, 54%);
   --color-secondary-hs: 26, 90%; /* base color */
   --color-secondary-l: 54%; /* base lightness*/
 
-  --color-secondary-dark: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 15%));
-  --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 20%));
-  --color-secondary-dark-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 25%));
+  --color-secondary-dark: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 14%));
+  --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 18%));
+  --color-secondary-dark-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 21%));
+  --color-secondary-dark-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 24%));
   --color-secondary-light: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 15%));
   --color-secondary-light-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 30%));
-  --color-secondary-light-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 40%));
+  --color-secondary-light-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 37%));
+  --color-secondary-light-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 40%));
 
   --color-text: --black;
   --color-text-hover: var(--color-secondary);
