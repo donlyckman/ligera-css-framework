@@ -1,6 +1,6 @@
 nav {
   &.main {
-    background: black;
+    background:var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,8 +9,11 @@ nav {
     max-width: 100%;
 
     a {
-      color: white;
+      color: var(--white);
       padding: 0 5px;
+      &:hover {
+        color: var(--color-secondary);
+      }
     }
 
     .logo {
