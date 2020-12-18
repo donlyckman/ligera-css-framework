@@ -1,0 +1,48 @@
+// Color values
+// $color-primary: #2f759d;
+// $color-secondary: #f37a1e;
+
+
+:root {
+  /* Primary colors */
+  --color-primary: hsl(202, 54%, 40%);
+  --color-primary-hs: 202, 54%; /* base color */
+  --color-primary-l: 40%; /* base lightness*/
+
+  --color-primary-dark: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 15%));
+  --color-primary-dark-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 20%));
+  --color-primary-dark-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 25%));
+  --color-primary-light: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 15%));
+  --color-primary-light-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 30%));
+  --color-primary-light-x: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 50%));
+
+    /* Secondary colors */
+  --color-secondary: hsl(26, 90%, 54%);
+  --color-secondary-hs: 26, 90%; /* base color */
+  --color-secondary-l: 54%; /* base lightness*/
+
+  --color-secondary-dark: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 15%));
+  --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 20%));
+  --color-secondary-dark-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 25%));
+  --color-secondary-light: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 15%));
+  --color-secondary-light-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 30%));
+  --color-secondary-light-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 40%));
+
+  --color-text: --black;
+  --color-text-hover: var(--color-secondary);
+
+  // shades - generated using chroma.js - 12 steps
+  --black: #1d1d21;
+  --gray-10: #2e2e31;
+  --gray-6: #7b7a7d;
+  --gray-4: #a5a5a6;
+  --gray-3: #bbbbbc;
+  --gray-2: #d1d0d2;
+  --gray-1: #e8e7e8;
+  --white: white;
+
+  /* feedback */
+  --color-success: #88c459;
+  --color-error: #f5414f;
+  --color-warning: #ffd137;
+}
