@@ -46,7 +46,7 @@ body {
 
 .colors-primary, .colors-secondary {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  //grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 1rem;
   padding-bottom: 1rem;
 

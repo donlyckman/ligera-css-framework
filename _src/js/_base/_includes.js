@@ -26,5 +26,3 @@
   document.body.append(footer)
 
   }
-
-//# sourceMappingURL=ligera.min.js.map
