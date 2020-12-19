@@ -1,5 +1,5 @@
 
-  fetch('html/_main.html')
+  fetch('html/_global.html')
   .then(response => response.text())
   .then(html => getContent(html))
   .catch(function(err) {
