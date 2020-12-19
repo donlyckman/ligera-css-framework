@@ -1,24 +1,81 @@
-@mixin mq($width, $type:min) {
-  @if map_has_key($breakpoints, $width) {
-      $width: map_get($breakpoints, $width);
-      // @if $type == max {
-      //     $width: $width - 1px;
-      // }
-      @media only screen and (#{$type}-width: $width) {
-          @content;
-      }
+// Container padding using --container-padding global setting
+@mixin container-padding() {
+  padding: var(--container-padding-mobile);
+
+  @include mq('desktop-sm') {
+    padding: var(--container-padding-desktop);
   }
 }
 
-// @mixin push--auto {
-//   margin: {
-//       left: auto;
-//       right: auto;
+// Container width using --container-width global setting
+@mixin container-width() {
+  width: var(--container-max-width-mobile);
+  max-width: var(--container-max-width-mobile);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq('desktop-sm') {
+    width: var(--container-max-width-desktop);
+    max-width: var(--container-max-width-desktop);
+  }
+}
+
+@mixin mq($width, $type:min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if $type==max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// MQ Usage
+// div {
+//   @include mq('tablet-wide') {
+//     padding-top: 4rem;
+//     font-size: 2.4rem;
 //   }
 // }
 
-// @mixin color-pct($color,$pct) {
+@mixin ratio($x, $y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + '%');
 
-// hsl(var({$color}-hs),calc(var({$color}-l) + $pct));
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  }
 
+  @else {
+    padding-top: $padding;
+  }
+}
+
+// ratio Usage
+// div {
+//   @include ratio(16,9);
 // }
+
+@function grid-calc($index, $total: $grid-column-count) {
+  @if $index==0 {
+    @return 0%;
+  }
+
+  @else {
+    @return 100%/($total/$index);
+  }
+}
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

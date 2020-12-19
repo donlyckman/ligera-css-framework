@@ -1,3 +1,7 @@
+// Hide elements based on media size using classes:
+// .hide-mobile
+// .hide-desktop
+//
 @include mq('tablet-sm') {
 
   .hide-mobile {
@@ -20,6 +24,7 @@
   }
 }
 
+// Set flex-wrap to wrap
 .flex-wrap {
   flex-wrap: wrap;
 }

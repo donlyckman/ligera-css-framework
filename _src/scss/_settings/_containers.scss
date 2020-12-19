@@ -68,7 +68,7 @@
 }
 
 .c5 {
-  @include mq('desktop-md') {
+  @include mq('tablet') {
     flex-flow: row;
     flex-wrap: wrap;
 
@@ -102,7 +102,7 @@
 }
 
 .c7 {
-  @include mq('desktop-md') {
+  @include mq('tablet') {
     flex-flow: row;
     flex-wrap: wrap;
 
@@ -118,15 +118,11 @@
     flex-wrap: wrap;
 
     &>* {
-      flex-basis: percentage(1/2);
-    }
-  }
-  @include mq('tablet') {
-    &>* {
       flex-basis: percentage(1/4);
     }
   }
-  @include mq('desktop-md') {
+
+  @include mq('desktop-sm') {
     &>* {
       flex-basis: percentage(1/8);
     }
@@ -134,9 +130,15 @@
 }
 
 .c9 {
-  @include mq('desktop-md') {
+  @include mq('tablet-mini') {
     flex-flow: row;
     flex-wrap: wrap;
+
+    &>* {
+      flex-basis: percentage(1/3);
+    }
+  }
+  @include mq('desktop-md') {
 
     &>* {
       flex-basis: percentage(1/9);
@@ -154,7 +156,7 @@
     }
   }
 
-  @include mq('desktop-md') {
+  @include mq('tablet') {
     flex-flow: row;
     flex-wrap: wrap;
 
@@ -163,7 +165,7 @@
     }
   }
 
-  @include mq('desktop-lg') {
+  @include mq('desktop-md') {
     flex-flow: row;
     flex-wrap: wrap;
 
@@ -175,7 +177,7 @@
 }
 
 .c11 {
-  @include mq('desktop-lg') {
+  @include mq('desktop-md') {
     flex-flow: row;
     flex-wrap: wrap;
 
@@ -191,7 +193,7 @@
     flex-wrap: wrap;
 
     &>* {
-      flex-basis: percentage(1/2);
+      flex-basis: percentage(1/3);
     }
   }
 
@@ -200,7 +202,7 @@
     flex-wrap: wrap;
 
     &>* {
-      flex-basis: percentage(1/3);
+      flex-basis: percentage(1/4);
     }
   }
 
@@ -209,7 +211,7 @@
     flex-wrap: wrap;
 
     &>* {
-      flex-basis: percentage(1/4);
+      flex-basis: percentage(1/6);
     }
   }
 
@@ -218,16 +220,8 @@
     flex-wrap: wrap;
 
     &>* {
-      flex-basis: percentage(1/6);
-    }
-  }
-
-  @include mq('desktop-lg') {
-    flex-flow: row;
-    flex-wrap: wrap;
-
-    &>* {
       flex-basis: percentage(1/12);
     }
   }
+
 }

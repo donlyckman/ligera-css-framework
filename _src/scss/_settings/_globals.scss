@@ -1,50 +1,70 @@
 // Spacing
 :root {
-  --content-max-width: 1400px;
+  --container-max-width-mobile: 100%;
+  --container-max-width-desktop: 1400px;
+
+  --container-padding-mobile: 25px;
+  --container-padding-desktop: 30px;
 }
 
 // Breakpoints
-$breakpoints: (
-    "phone":        320px,
-    "tablet-mini":  768px,
-    "tablet":       1024px,
-    "desktop-sm":   1025px,
-    "desktop-md":   1200px,
-    "desktop-lg":   1440px,
-    "desktop-hd":   1920px,
-    "desktop-qhd":  2560px,
-    "desktop-4k":   3840px
-);
+$breakpoints: ("phone": 320px,
+  "tablet-mini": 768px,
+  "tablet": 1024px,
+  "desktop-sm": 1025px,
+  "desktop-md": 1200px,
+  "desktop-lg": 1440px,
+  "desktop-hd": 1920px,
+  "desktop-qhd": 2560px,
+  "desktop-4k": 3840px);
 
 body {
-  &>*{
-    max-width: calc(100% - 30px);
-    margin: 0 auto;
-  }
+  // &>* {
+  //   max-width: calc(100% - 30px);
+  //   margin: 0 auto;
+  // }
 }
 
 
 .flex-100 {
   flex-basis: 100% !important;
 }
+
 .flex-50 {
   flex-basis: 50% !important;
 }
+
 .flex-h-center {
   justify-content: center;
 }
+
 .flex-v-center {
   align-items: center;
 }
+
 .center {
   text-align: center;
 }
 
-.content-width {
+// Makes a container the full width of the viewport even if the parent container is not full viewport width
+.full-vw-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+// Adds padding to a container to keep content within the --content-max-width setting
+.content-width-padding {
   padding-left: calc((100% - var(--content-max-width)) / 2) !important;
   padding-right: calc((100% - var(--content-max-width)) / 2) !important;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.content-width-margins {
+  margin-left: calc((100% - var(--content-max-width)) / 2) !important;
+  margin-right: calc((100% - var(--content-max-width)) / 2) !important;
 }
