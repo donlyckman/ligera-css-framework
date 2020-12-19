@@ -1,7 +1,7 @@
 *Currently in development and not yet ready for actual use*
 
 # Ligera CSS Framework
-Light-weight, minimal css framework focusing on pwa's
+Light-weight, minimal css framework focusing on pwa's using mobile first approach
 
 Project Goals
 - Create a minimal framework to use as a starting point for PWA's
