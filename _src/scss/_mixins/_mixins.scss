@@ -10,13 +10,12 @@
 // Container width using --container-width global setting
 @mixin container-width() {
   width: var(--container-max-width-mobile);
-  max-width: var(--container-max-width-mobile);
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 
   @include mq('desktop-sm') {
     width: var(--container-max-width-desktop);
-    max-width: var(--container-max-width-desktop);
   }
 }
 
