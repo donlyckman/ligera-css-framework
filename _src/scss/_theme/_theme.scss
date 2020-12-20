@@ -24,6 +24,9 @@
 
         header {
           padding: 10px 0;
+          h3 {
+            color: var(--color-secondary);
+          }
         }
 
         &#text__headings div {
@@ -59,6 +62,8 @@
 
               h4,
               p {
+                font-weight:400;
+                color: var(--gray-6);
                 width: 100%;
                 margin: 0;
                 padding: 5px 0;
@@ -140,8 +145,13 @@
 
 .g-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  //grid-template-rows: auto auto auto;
+  @include mq('tablet-sm') {
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
+ }
+  @include mq('desktop-sm') {
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - 1rem), 1fr));
+ }
+
   grid-gap: 1rem;
 }
 
@@ -149,6 +159,14 @@
   background-color: var(--color-primary-light-x);
   padding: 1.5rem;
   border-radius: .5rem;
+}
+
+.g-3 {
+  display: grid;
+  @include mq('desktop-sm') {
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
+ }
+  grid-gap: 1rem;
 }
 
 .colors-primary,
@@ -257,17 +275,16 @@
 
 }
 
-footer.main {
+footer.main,colophon {
   display: flex;
-  max-width: 100%;
-  color: white;
+  color: var(--white);
   background-color: var(--color-primary);
   padding: 30px;
 }
 
-colophon {
-  display: flex;
-  max-width: 100%;
-  background-color: var(--color-primary-xx);
-  padding: 30px;
+ colophon {
+  justify-content: center;
+  color: var(--black);
+  background-color: var(--color-primary-light-x);
+  padding: 10px;
 }

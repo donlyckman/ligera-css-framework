@@ -9,6 +9,7 @@ const rename = require( 'gulp-rename' );
 const uglify = require( 'gulp-uglify' );
 const imagemin = require( 'gulp-imagemin' );
 const gutil = require('gulp-util');
+const clean = require('gulp-clean');
 const { watch, series } = require('gulp');
 
 var src = '_src';
@@ -26,7 +27,7 @@ gulp.task( 'scss', function () {
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest( dst + '/css' )
         .on('end', function() {
-            gutil.log('----------/ SCSS Complete /----------');
+            gutil.log('-----/ SCSS Complete /-----');
           } ) );
 } );
 
@@ -41,7 +42,7 @@ gulp.task( 'js', function () {
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest( dst + '/js' )
         .on('end', function() {
-            gutil.log('----------/ JS Complete /----------');
+            gutil.log('-----/ JS Complete /-----');
           } ) );
 } );
 
@@ -66,7 +67,7 @@ gulp.task( 'images', function () {
         ] ) )
         .pipe( gulp.dest( dst + '/images' )
         .on('end', function() {
-            gutil.log('----------/ IMAGES Complete /----------');
+            gutil.log('-----/ IMAGES Complete /-----');
           } ) );
 } );
 
@@ -75,7 +76,7 @@ gulp.task( 'html', function() {
     return gulp.src( src + '/**/*.html' )
         .pipe( gulp.dest( dst )
         .on('end', function() {
-            gutil.log('----------/ HTML Complete /----------');
+            gutil.log('-----/ HTML Complete /-----');
         }));
 } );
 
@@ -83,15 +84,18 @@ gulp.task( 'html', function() {
 //     return gulp.src( src + '/**/*.html' )
 //         .pipe( gulp.dest( dst )
 //         .on('end', function() {
-//             gutil.log('----------/ HTML Complete /----------');
+//             gutil.log('-----/ HTML Complete /-----');
 //         }));
 // } );
 
 
 // TASK: Clean DST folder
 gulp.task('clean', function () {
-    return gulp.src( dst + '/*', {read: false})
-        .pipe(clean());
+    return gulp.src( dst, {read: false})
+        .pipe(clean()
+        .on('end', function() {
+            gutil.log('-----/ DST Cleaned /-----');
+        }));
 });
 
 // TASK: Watch

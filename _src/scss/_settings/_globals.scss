@@ -1,7 +1,7 @@
 // Spacing
 :root {
   --container-max-width-mobile: 100%;
-  --container-max-width-desktop: 1400px;
+  --container-max-width-desktop: 1300px;
 
   --container-padding-mobile: 25px;
   --container-padding-desktop: 30px;
@@ -9,8 +9,8 @@
 
 // Breakpoints
 $breakpoints: ("phone": 320px,
-  "tablet-mini": 768px,
-  "tablet": 1024px,
+  "tablet-sm": 768px,
+  "tablet-md": 1024px,
   "desktop-sm": 1025px,
   "desktop-md": 1200px,
   "desktop-lg": 1440px,
