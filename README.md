@@ -7,7 +7,7 @@ Project Goals
 - Create a minimal framework to use as a starting point for PWA's
 - Keep framework files separate from theme files so the framework can be updated with only minimal impact on the theme files
 - Keep it somewhat barebones by focusing on common uses
-- Make it easy to extend and still keep the code to a minmal size
+- Make it easy to extend and still keep the code to a minimal size
 
 # Versions
 0.0.0 - Project starting point
