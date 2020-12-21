@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="170mm"
+   height="60mm"
+   viewBox="0 0 170 60"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="ligera-logo-1-source.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7459522"
+     inkscape:cx="310.67108"
+     inkscape:cy="199.18551"
+     inkscape:document-units="mm"
+     inkscape:current-layer="text835"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
+     inkscape:window-x="1440"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       aria-label="ligera"
+       id="text835"
+       style="font-size:56.1562px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:Oswald;fill:#000000;stroke-width:1.40391">
+      <path
+         id="path1507"
+         style="fill:#5a2ca0;stroke-width:9.21377;stroke-linejoin:round"
+         inkscape:transform-center-x="0.0036974939"
+         inkscape:transform-center-y="-2.3874139"
+         d="m 28.614095,6.0767786 -1.244886,2.525943 6.408912,13.9273144 c 0.573315,1.24586 1.947199,1.755678 3.193084,1.182357 l 4.273643,-1.966288 -5.265312,-0.762743 z m -4.981094,10.1053244 -2.370396,4.808492 -16.4527417,2.398821 2.141988,2.08566 15.1396427,-1.781286 c 1.362072,-0.160229 2.271244,-1.309094 2.110983,-2.671154 z m 4.974376,5.664771 c -0.260191,3.162848 -2.738736,5.844834 -6.000152,6.228562 l -2.005563,0.236162 c 2.532298,1.398984 4.006567,4.342114 3.413228,7.314282 l -0.437181,2.18953 c 2.106308,-2.099892 5.456121,-2.655816 8.164877,-1.136364 l 2.094445,1.174604 c -1.275057,-2.633797 -0.75052,-5.925947 1.499134,-8.002614 l 1.734259,-1.600935 C 34.123979,28.724086 31.072799,27.204184 29.770612,24.37437 Z M 49.348745,22.919678 38.32823,33.092182 c -1.007753,0.930251 -1.067716,2.394638 -0.137459,3.402378 l 3.200839,3.467489 -0.857314,-4.984192 11.900568,-11.611179 z m -36.857697,7.949385 4.230748,4.120163 -2.802929,16.389181 2.7404,-1.442292 3.029792,-15.174267 c 0.268504,-1.344919 -0.543849,-2.564421 -1.888776,-2.832901 z m 15.938561,9.332764 c -0.850551,-0.02093 -1.661592,0.423064 -2.122869,1.245402 l -2.715596,4.840015 5.041038,-2.65307 14.720549,7.730278 L 42.76,47.916601 29.584578,40.526354 c -0.373792,-0.209677 -0.768355,-0.315015 -1.154969,-0.324527 z" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:50.79999999999999716px;line-height:1.25;font-family:Khand;-inkscape-font-specification:'Khand, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.371451;fill:#5a2ca0;"
+         x="58.949451"
+         y="46.523087"
+         id="text2226"><tspan
+           sodipodi:role="line"
+           id="tspan2224"
+           x="58.949451"
+           y="46.523087"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:50.79999999999999716px;font-family:Khand;-inkscape-font-specification:'Khand, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.371451;fill:#5a2ca0;">ligera</tspan></text>
+      <rect
+         style="fill:#ffffff;stroke-width:4.5238;stroke-linejoin:round"
+         id="rect2228"
+         width="5.7585578"
+         height="5.7585578"
+         x="25.913509"
+         y="28.186626"
+         ry="1.6453022" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:4.99999;stroke-linejoin:round"
+         id="path2232"
+         cx="37.279087"
+         cy="28.186628"
+         r="1.5154099" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:4.99999;stroke-linejoin:round"
+         id="circle2234"
+         cx="33.945187"
+         cy="37.885254"
+         r="1.5154099" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:4.99999;stroke-linejoin:round"
+         id="circle2236"
+         cx="23.640398"
+         cy="37.885254"
+         r="1.5154099" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:4.99999;stroke-linejoin:round"
+         id="circle2240"
+         cx="28.792791"
+         cy="22.12499"
+         r="1.5154099" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:4.99999;stroke-linejoin:round"
+         id="circle2242"
+         cx="20.609577"
+         cy="28.186628"
+         r="1.5154099" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:8.49998;stroke-linejoin:round"
+         id="circle2244"
+         cx="42.583027"
+         cy="49.402367"
+         r="2.5761969" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:8.49998;stroke-linejoin:round"
+         id="circle2246"
+         cx="14.851024"
+         cy="49.553909"
+         r="2.5761969" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:8.49998;stroke-linejoin:round"
+         id="circle2248"
+         cx="5.9101048"
+         cy="24.095022"
+         r="2.5761969" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:8.49998;stroke-linejoin:round"
+         id="circle2250"
+         cx="27.883549"
+         cy="7.7285943"
+         r="2.5761969" />
+      <circle
+         style="fill:#5a2ca0;stroke-width:8.49998;stroke-linejoin:round"
+         id="circle2252"
+         cx="50.766239"
+         cy="23.337317"
+         r="2.5761969" />
+    </g>
+  </g>
+</svg>

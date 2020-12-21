@@ -1,11 +1,13 @@
 nav {
   &.main {
-    background:var(--color-primary);
+    //background:var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
-    padding: 0 15px;
+    padding: 15px 0;
+    @include mq('desktop-sm'){
+      @include content-width;
+    }
 
     a {
       color: var(--white);
@@ -18,21 +20,26 @@ nav {
     .logo {
       display: block;
       align-items: center;
+      margin-left: 15px;
 
       img {
-        height: 27px;
+        height: 35px;
         transition: transform .3s;
+        @include mq('desktop-sm'){
+          height: 60px;
+        }
       }
 
       &:hover {
         img {
-          transform: scale(1.05);
+          transform: scale(1.02);
         }
       }
     }
 
     ul.menu {
       display: flex;
+      margin-right: 15px;
     }
   }
 }
