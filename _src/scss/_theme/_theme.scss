@@ -1,15 +1,28 @@
-
-
 .custom-theme {
 
   body {
-    background-color: #fafafa;
+    @include gradient-linear;
+    background-repeat: no-repeat;
   }
 
   main {
+    &.home{
+      background: transparent;
+      color: var(--white);
+      h1,h2,h3,h4,h5,h6 {
+        color: var(--white);
+      }
+    }
     @include container-padding;
     @include container-width;
+    @include container-full-height;
     background-color: var(--container-bg-color);
+
+    @include mq('desktop-sm') {
+      border-radius: var(--border-radius-lg);
+    }
+
+    margin-bottom: var(--margin-xlg);
 
     header {
       padding: 10px 0;
@@ -24,6 +37,7 @@
 
         header {
           padding: 10px 0;
+
           h3 {
             color: var(--color-secondary);
           }
@@ -62,7 +76,7 @@
 
               h4,
               p {
-                font-weight:400;
+                font-weight: 400;
                 color: var(--gray-6);
                 width: 100%;
                 margin: 0;
@@ -145,27 +159,31 @@
 
 .g-2 {
   display: grid;
+
   @include mq('tablet-sm') {
     grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
- }
+  }
+
   @include mq('desktop-sm') {
     grid-template-columns: repeat(auto-fill, minmax(calc(25% - 1rem), 1fr));
- }
+  }
 
   grid-gap: 1rem;
 }
 
 .g-2>* {
-  background-color: var(--color-primary-light-x);
+  background-color: var(--color-primary-light-xx);
   padding: 1.5rem;
   border-radius: .5rem;
 }
 
 .g-3 {
   display: grid;
+
   @include mq('desktop-sm') {
     grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
- }
+  }
+
   grid-gap: 1rem;
 }
 
@@ -275,14 +293,15 @@
 
 }
 
-footer.main,colophon {
+footer.main,
+colophon {
   display: flex;
   color: var(--white);
   background-color: var(--color-primary);
   padding: 30px;
 }
 
- colophon {
+colophon {
   justify-content: center;
   color: var(--black);
   background-color: var(--color-primary-light-x);

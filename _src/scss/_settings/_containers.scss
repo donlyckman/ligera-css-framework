@@ -130,7 +130,7 @@
 }
 
 .c9 {
-  @include mq('tablet-smi') {
+  @include mq('tablet-sm') {
     flex-flow: row;
     flex-wrap: wrap;
 

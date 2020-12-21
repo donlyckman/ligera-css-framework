@@ -2,9 +2,9 @@
 
 :root {
   /* Primary colors */
-  --color-primary: hsl(202, 54%, 40%);
-  --color-primary-hs: 202, 54%; /* base color */
-  --color-primary-l: 40%; /* base lightness*/
+  --color-primary: #393380;
+  --color-primary-hs: 245, 43%; /* base color */
+  --color-primary-l: 35%; /* base lightness*/
 
   --color-primary-dark: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 10%));
   --color-primary-dark-m: hsl(var(--color-primary-hs),calc(var(--color-primary-l) - 15%));
@@ -16,21 +16,22 @@
   --color-primary-light-xx: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 56%));
 
     /* Secondary colors */
-  --color-secondary: hsl(26, 90%, 54%);
-  --color-secondary-hs: 26, 90%; /* base color */
-  --color-secondary-l: 54%; /* base lightness*/
+  --color-secondary: #ff571a;
+  --color-secondary-hs: 16, 100%; /* base color */
+  --color-secondary-l: 55%; /* base lightness*/
 
   --color-secondary-dark: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 14%));
-  --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 18%));
-  --color-secondary-dark-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 21%));
-  --color-secondary-dark-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 24%));
+  --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 20%));
+  --color-secondary-dark-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 25%));
+  --color-secondary-dark-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 30%));
   --color-secondary-light: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 15%));
   --color-secondary-light-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 30%));
-  --color-secondary-light-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 37%));
-  --color-secondary-light-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 40%));
+  --color-secondary-light-x: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 40%));
+  --color-secondary-light-xx: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) + 50%));
 
-  --color-text: --black;
+  --color-text: var(--black);
   --color-text-hover: var(--color-secondary);
+  --color-headers: var(--color-secondary);
 
   // shades - generated using chroma.js - 12 steps
   --black: #1d1d21;
