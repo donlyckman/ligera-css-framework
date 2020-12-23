@@ -1,18 +1,26 @@
 .custom-theme {
 
   body {
-    @include gradient-linear;
+    background: linear-gradient(180deg, var(--color-primary) 10%, #2a83b8 50%, var(--color-primary) 90%);
     background-repeat: no-repeat;
+
   }
 
   main {
-    &.home{
+    &.home {
       background: transparent;
       color: var(--white);
-      h1,h2,h3,h4,h5,h6 {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         color: var(--white);
       }
     }
+
     @include container-padding;
     @include container-width;
     @include container-full-height;
@@ -111,7 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--color-primary-light-x);
+        background-color: var(--color-secondary-light-x);
         margin: 1px;
         min-height: 100px;
       }
@@ -152,7 +160,7 @@
 }
 
 .g-1>* {
-  background-color: var(--color-primary-light-x);
+  background-color: var(--color-secondary-light-x);
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -297,13 +305,17 @@ footer.main,
 colophon {
   display: flex;
   color: var(--white);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark-m);
   padding: 30px;
 }
 
 colophon {
   justify-content: center;
-  color: var(--black);
-  background-color: var(--color-primary-light-x);
+  color: var(--white);
+  background-color: var(--color-primary-dark);
   padding: 10px;
+
+  a {
+    color: var(--white);
+  }
 }

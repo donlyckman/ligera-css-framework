@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;700;800;900&family=Fira+Code:wght@300;600&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
-    --font-family-primary: 'Roboto', sans-serif;
-    --font-family-secondary: 'Khand', sans-serif;
+    --font-family-primary: 'Open Sans', sans-serif;
+    --font-family-secondary: 'Exo 2', sans-serif;
+    --font-family-code: 'Fira Code', monospace;
 }
 
 body {
@@ -67,5 +68,5 @@ a {
 }
 
 code {
-    font-family: 'Share Tech Mono';
+    font-family: var(--font-family-code);
 }
