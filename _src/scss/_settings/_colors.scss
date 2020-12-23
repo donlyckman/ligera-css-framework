@@ -16,9 +16,9 @@
   --color-primary-light-xx: hsl(var(--color-primary-hs),calc(var(--color-primary-l) + 56%));
 
     /* Secondary colors */
-  --color-secondary: #ff571a;
-  --color-secondary-hs: 16, 100%; /* base color */
-  --color-secondary-l: 55%; /* base lightness*/
+  --color-secondary: #2a80b6;
+  --color-secondary-hs: 203, 63%; /* base color */
+  --color-secondary-l: 44%; /* base lightness*/
 
   --color-secondary-dark: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 14%));
   --color-secondary-dark-m: hsl(var(--color-secondary-hs),calc(var(--color-secondary-l) - 20%));

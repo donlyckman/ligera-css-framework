@@ -17,11 +17,10 @@ var dst = '_dst';
 
 // TASK: SCSS
 gulp.task( 'scss', function () {
-    return gulp.src( src + '/scss/_includes.scss' )
-        .pipe( concat('ligera.scss') )
-        .pipe( sass() )
+    return gulp.src( src + '/scss/**/*.scss' )
         .pipe( sourcemaps.init() )
-        .pipe( autoprefixer( 'last 2 version' ) )
+        .pipe( sass() )
+        .pipe( autoprefixer( 'last 2 versions' ) )
         .pipe( cssnano() )
         .pipe( rename({ suffix: '.min' }) )
         .pipe( sourcemaps.write('.') )
