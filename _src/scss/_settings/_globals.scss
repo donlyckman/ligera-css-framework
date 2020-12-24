@@ -12,10 +12,20 @@
   --margin-xlg: 30px;
 
 
-  --border-radius-sm: 5px;
-  --border-radius-md: 10px;
-  --border-radius-lg: 20px;
+  --border-radius-sm: 3px;
+  --border-radius-md: 5px;
+  --border-radius-lg: 10px;
   --border-radius-xlg: 30px;
+
+  --button-border-size: 2px;
+  --button-border-radius: var(--border-radius-sm);
+  --button-background-color: var(--color-secondary-dark);
+  --button-background-color-hover: var(--color-secondary);
+  --button-border-color: var(--color-secondary-dark);
+  --button-border-color-hover: var(--color-secondary-light);
+
+  --transition-linear: .2s linear;
+  --transition-ease: .2s ease;
 }
 
 // Breakpoints
